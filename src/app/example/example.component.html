@@ -1,0 +1,10 @@
+<p>example works!</p>
+@if (data$ | async; as data) {
+    <div>
+      <h2>{{ data.title }}</h2>
+      <p>{{ data.description }}</p>
+    </div>
+  } @else {
+    <p>Loading...</p>
+  }
+  <button (click)="updateData()">Update Data</button>
