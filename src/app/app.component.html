@@ -1,2 +1,8 @@
 <h1>My App</h1>
 <app-example></app-example>
+<h1>Click to Highlight</h1>
+<p [appHighlight]="'lightblue'">Click me to highlight in light blue!</p>
+<p appHighlight>Click me to highlight in yellow (default color)!</p>
+<div [appHighlight]="'lightgreen'" style="padding: 10px; border: 1px solid black;">
+    This is a div that will highlight in light green when clicked.
+</div>
