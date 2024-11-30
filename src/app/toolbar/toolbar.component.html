@@ -1,0 +1,7 @@
+<!-- src/app/toolbar/toolbar.component.html -->
+
+<mat-toolbar color="primary">
+  <span>{{ title }}</span>
+  <span class="spacer"></span>
+  <a mat-button *ngFor="let link of navigationLinks" [routerLink]="link.path" routerLinkActive="active">{{ link.label }}</a>
+</mat-toolbar>
