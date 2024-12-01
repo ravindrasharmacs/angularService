@@ -8,6 +8,7 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 import { CardComponent } from './card/card.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AccordionComponent } from './accordion/accordion.component';
+import { CreditCardInputComponent } from './credit-card-input/credit-card-input.component';
 
 @Component({
   selector: 'app-root',
@@ -20,7 +21,8 @@ import { AccordionComponent } from './accordion/accordion.component';
     HighlightDirective,
   ToolbarComponent,
   CardComponent,
-AccordionComponent],
+AccordionComponent,
+CreditCardInputComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

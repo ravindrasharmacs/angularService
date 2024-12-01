@@ -1,0 +1,11 @@
+<div>
+    <label for="creditCard">Credit Card Number:</label>
+    <input 
+      id="creditCard"
+      type="text" 
+      [(ngModel)]="creditCardNumber" 
+      (input)="onInput()"
+      placeholder="Enter credit card number"
+    >
+    <p>Formatted: {{ creditCardNumber | creditCardFormat }}</p>
+  </div>
