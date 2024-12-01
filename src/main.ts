@@ -3,9 +3,11 @@ import { AppComponent } from './app/app.component'; // Adjust the path if necess
 import { provideRouter } from '@angular/router'; // Import provideRouter
 import { provideHttpClient, withFetch } from '@angular/common/http'; // Import necessary functions
 import { routes } from './app/app.routes';
+import { provideAnimations } from '@angular/platform-browser/animations';
 
 bootstrapApplication(AppComponent, {
   providers: [
+    provideAnimations(), // Enable animations support
     provideRouter(routes), // Use provideRouter instead of RouterModule.forRoot
     provideHttpClient(withFetch()) // Enable fetch support here
   ]

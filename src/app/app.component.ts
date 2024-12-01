@@ -5,7 +5,7 @@ import { HighlightDirective } from './highlight.directive';
 import { RouterModule } from '@angular/router';
 import { routes } from './app.routes';
 import { ToolbarComponent } from './toolbar/toolbar.component';
-// import { BrowserModule } from '@angular/platform-browser';
+import { CardComponent } from './card/card.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @Component({
@@ -17,7 +17,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ExampleComponent , 
     RouterOutlet , 
     HighlightDirective,
-  ToolbarComponent],
+  ToolbarComponent,
+  CardComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
