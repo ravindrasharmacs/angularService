@@ -7,6 +7,7 @@ import { routes } from './app.routes';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { CardComponent } from './card/card.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AccordionComponent } from './accordion/accordion.component';
 
 @Component({
   selector: 'app-root',
@@ -18,7 +19,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     RouterOutlet , 
     HighlightDirective,
   ToolbarComponent,
-  CardComponent],
+  CardComponent,
+AccordionComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
